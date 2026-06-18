@@ -1,0 +1,11 @@
+Python:
+https://www.linkedin.com/learning/python-essential-training-18764650
+
+Kotlin: 
+https://www.linkedin.com/learning/paths/kotlin-professional-certificate-by-jetbrains?u=2203402
+
+Java:
+https://www.linkedin.com/learning/java-essential-training-syntax-and-structure-16025610/creating-methods?u=2203402
+
+Javascript : 
+https://www.linkedin.com/learning/javascript-essential-training/object-containers?u=2203402
