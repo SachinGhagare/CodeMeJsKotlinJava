@@ -1,0 +1,157 @@
+System Design Introduction - LLD & HLD
+  - process of planning
+  - structuring the architecture of a system based on requirements and constraints
+  - creating a blueprint for the system that outlines its components, their interactions to meet the desired functionality effectively and efficiently
+
+* goal is creating a system that is scalable, maintainable, and meets the needs of its users while considering factors such as performance, security, and cost.
+* involves both high-level design (HLD) and low-level design (LLD).
+
+Example : 
+ = online food delivery system : 
+  - HLD : 
+	- defining the overall architecture of the system, including the main components and their interactions
+	- identifying the key modules and their responsibilities
+	- defining the data flow and communication between modules
+	- considering scalability, performance, and security requirements
+
+  - LLD : 
+	- providing detailed design specifications for each module, including data structures, algorithms, and interfaces
+	- defining the database schema and relationships between entities
+	- specifying the APIs and protocols for communication between modules
+	- considering error handling, logging, and monitoring mechanisms
+
+= online shoping system : 
+  - how components like product catalog, shopping cart, payment gateway, and order management interact with each other
+
+
+System Design in SDLC : 
+   Request Analysis : 
+	- understanding the requirements and constraints of the system
+	- identifying the key stakeholders and their needs
+	- defining the functional and non-functional requirements of the system
+
+   System Design : 
+	- creating the high-level design (HLD) and low-level design (LLD) of the system based on the requirements
+	- identifying the key components and their interactions
+	- defining the data flow and communication between modules
+	- considering scalability, performance, security, and maintainability requirements
+
+	Implimentation :
+	- developing the system based on the design specifications
+
+	Testing : 
+	- verifying that the system meets the requirements and functions as expected
+
+	Deployment :
+	 - releasing the system to production and making it available to users
+
+	Maintenance :
+	- monitoring the system for issues and making updates as needed to ensure it continues to meet the needs of its users
+
+System designe can be divided into two parts : 
+  - High Level Design (HLD) : 
+	- focuses on the overall architecture of the system and its components
+	- provides a high-level view of the system's structure and behavior
+	- defines the key modules and their interactions
+	- considers scalability, performance, security, and maintainability requirements
+
+  - Low Level Design (LLD) : 
+	- focuses on the detailed design of each module and its components
+	- provides a low-level view of the system's structure and behavior
+	- defines the data structures, algorithms, and interfaces for each module
+	- considers error handling, logging, and monitoring mechanisms
+
+
+Prerequisite Technical Knowledge for HLD
+ - Understanding of system architecture and design patterns
+ - Knowledge of programming languages and frameworks
+ - Familiarity with databases and data modeling
+ - Understanding of networking and communication protocols like HTTP, TCP/UDP, WebSockets, WebRTC, JWT, OAuth, TLS/SSL, etc.
+ - Knowledge of cloud computing and distributed systems like AWS, Azure, GCP, Kubernetes, Docker, etc.
+ - Understanding of security principles and best practices like encryption, authentication, authorization, etc.
+ - Knowledge of performance optimization techniques like caching, load balancing, and database indexing
+ - Familiarity with DevOps practices and tools like CI/CD, monitoring, and logging
+ - Tools and technologies for HLD : 
+  - UML diagrams like class diagrams, sequence diagrams, activity diagrams, etc.
+  - Flowcharts and data flow diagrams
+  - ER diagrams for database design
+  - Wireframes and mockups for UI/UX design
+  - Architecture frameworks like TOGAF, Zachman, etc.
+ - Collaboration and project management tools like Jira, Confluence, Trello, etc.
+ - Tools like Grafana, Prometheus, ELK stack for monitoring and logging
+
+
+ Topics to cover in HLD : 
+  - System Architecture :
+    - Defines the overall structure of the system, including its components and their interactions
+    - Describes the key design decisions and trade-offs
+    - Considers scalability, performance, security, and maintainability requirements
+  - Component Design :
+	- Defines the key modules and their responsibilities
+	- Describes the data flow and communication between modules
+	- Considers error handling, logging, and monitoring mechanisms
+  - Data Design :
+	- Defines the data models and their relationships
+	- Describes the database schema and indexing strategy
+	- Considers data consistency, integrity, and security
+  - Interface Design :
+	- Defines the interfaces for each module
+	- Describes the API contracts and communication protocols
+	- Considers versioning, backward compatibility, and security
+  - Security Design :
+	- Defines the security requirements and measures for the system
+	- Describes authentication, authorization, and encryption mechanisms
+	- Considers threat modeling, risk assessment, and compliance requirements
+  - Performance Design :
+	- Defines the performance requirements and measures for the system
+	- Describes caching, load balancing, and database optimization strategies
+  - Deployment Design :
+	- Defines the deployment architecture and strategy for the system
+	- Considers scalability, fault tolerance, and disaster recovery mechanisms
+  - Artificats and Deliverables :
+	- HLD Document : A comprehensive document that outlines the high-level design of the system, including its architecture, components, data models, interfaces, security measures, performance optimizations, and deployment strategy.
+
+
+Real world examples of HLD : 
+  - Netflix : 
+	- HLD for Netflix includes the overall architecture of the system, including its components and their interactions, such as the content delivery network (CDN), recommendation engine, and user interface. It also considers scalability, performance, security, and maintainability requirements.
+	resources :
+	- https://www.slideshare.net/NetflixTechBlog/netflix-architecture-overview
+	other resources :
+	 - https://www.slideshare.net/NetflixTechBlog/netflix-architecture-overview-2
+  - Uber : 
+	- HLD for Uber includes the overall architecture of the system, including its components and their interactions, such as the ride matching algorithm, payment gateway, and driver management system. It also considers scalability, performance, security, and maintainability requirements.
+	resources :
+	- https://www.slideshare.net/UberEngineering/uber-architecture-overview
+  - Amazon : 
+	- HLD for Amazon includes the overall architecture of the system, including its components and their interactions, such as the product catalog, shopping cart, payment gateway, and order management system. It also considers scalability, performance, security, and maintainability requirements.
+	resources :
+	- https://www.slideshare.net/AmazonWebServices/amazon-architecture-overview
+
+
+ Topics to cover in LLD :  
+ Covers how each component is implemented, including classes, methods, and logic.
+
+Component/module breakdown: 
+ Detailed internal logic for each module—with class responsibilities, methods, attributes, interactions
+Database schema & structure: 
+ Designing tables, keys, indexes, relationships with SQL/NoSQL refinements
+API & interface definitions: 
+ Precise request/response formats, error codes, methods, endpoints, and internal interfacing
+Error handling & validation logic: 
+ Define how each module manages invalid inputs, failures, edge cases, and logging
+Design patterns & SOLID: 
+ Implement design patterns and solid principles to ensure clean, extensible, maintainable code
+UML and pseudocode artifacts: 
+ Class diagrams, sequence diagrams, pseudocode or flowcharts to clarify logic paths and method calls
+
+
+Difference between Low Level Design and High Level Design
+
+ HLD (High-Level Design):                                                                 LLD (Low-Level Design):
+  - Focuses on the overall architecture of the system.                                         - Focuses on the detailed design of each module and its components.
+  - Provides a high-level view of the system's structure and behavior.                        - Provides a low-level view of the system's structure and behavior.
+  - Defines the key modules and their interactions.                                             - Defines the data structures, algorithms, and interfaces for each module.
+  - Considers scalability, performance, security, and maintainability requirements.           - Considers error handling, logging, and monitoring mechanisms.
+   - Created for stakeholders, project managers, and developers to understand the              - Created for developers to implement the system based on the design system's architecture and design decisions. specifications. 
+   - Based on requirements and constraints, HLD provides a blueprint for the system's architecture.  - Based on HLD, LLD provides detailed design specifications for each module and its components.
